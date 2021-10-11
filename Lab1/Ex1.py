@@ -9,7 +9,7 @@
      
 #%%
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy as np 
 
 tol=10**-5
 y = lambda x: x**6-x-1
