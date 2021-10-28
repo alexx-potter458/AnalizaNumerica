@@ -11,7 +11,7 @@ x0 = np.pi/4
 solution = NewtonRapson(f,fd, x0, tol)
 
 print("Solution: ", solution)
-plt.scatter(x0, solution,s=50, marker='o', color = "red")
+plt.scatter(solution, f(solution), s=50, marker='o', color = "red")
 
 rangeX = np.linspace(0,np.pi/2)
 y = f(rangeX)

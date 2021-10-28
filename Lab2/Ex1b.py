@@ -40,7 +40,7 @@ y4d = phiD4(rangeX)
 
 # #b2ii
 # plt.plot(rangeX, y2, color="green")
-# plt.plot(rangeX, y2, color="blue")
+# plt.plot(rangeX, y2d, color="blue")
 # # graficele se suprapun
 
 # #b2iii
