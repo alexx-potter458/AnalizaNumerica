@@ -2,9 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
+def f(x): return x + math.e**(-x**2)*np.cos(x)
+rangeX = np.linspace(-1,1)
+y = f(rangeX)
 
-def f(x): 
-    power = -x**2
-    return x + (math.e**power)*math.cos(x)
+plt.plot(rangeX, y, color="red")
 
-print("df")
+plt.axhline(0)
+plt.show()
