@@ -1,16 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# def metPuntFix(phi, a, b):
+def metPunctFix(phi, xn, n):
+    for i in range(n):
+        if xn > 1000000000000000:
+            return "This one exploded"
+        xn = phi(xn)
+    return xn
 
-
-def f(x):
-    return -x**3-4*x**2-10
-def fPrim(x):
-    return -3*x**2-8*x
-
-interval = np.linspace(1,2)
-y=f(interval)
-yPrim = fPrim(interval)
-plt.plot(interval,y,c='red',linewidth=3)
-plt.plot(interval,yPrim,c='green',linewidth=3)
+def metPunctFixAndPrint(phi, xn, n):
+    for i in range(n):
+        if xn > 1000000000000000:
+            return "This one exploded"
+        xn = phi(xn)
+        print(i, " = ", xn)
+    return xn
