@@ -14,7 +14,7 @@ def bisectMethod(a, b):
         else:
             a = x
         x = a + (b-a)/2
-        print(x)
+        print(x, " --- a = ", a, " --- b = ", b)
         plt.scatter(x, f(x),s=10, marker='o', color = "red")
 
     plt.scatter(x, f(x),s=50, marker='o', color = "black")
